@@ -1,0 +1,21 @@
+### Register a new user
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "mypassword"
+}
+
+### Login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "mypassword"
+}
+
+### Access profile
+GET http://localhost:3000/profile
+Authorization: Bearer <your-jwt-token>
